@@ -1,3 +1,42 @@
 <html>
-    Hello world
+    <head>
+
+    </head>
+
+    <body>
+        <div class="header">
+            <h1> Special Tea </h1>
+            <div><img width="400" height="300" src="https://www.teaheart.eu/wp-content/uploads/2016/08/tg.jpg">
+            </div>
+        </div>
+        <div class="NewPost">
+            <form action="">
+                <div>
+                    <label for="title"><h4>BlogTitle:</h4></label>
+                    <input type="text" id="title" name="blogTitle" value="Insert Title">
+                    <label type="text"><h4>BlogText:</h4></label>
+                    <textarea id="text" size=400x150 name="textEntry"></textarea>
+                    <button>Submit</button>
+                </div>  
+            </form>
+            <div class="ImportImage" style="height:200px;"><img width="154" height="100" src="https://www.teaheart.eu/wp-content/uploads/2017/06/bitmap-1.png"></a></div>
+            <p> </p>
+        </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyBnq7ufpnetaovMzjlW8zSsZUzUvTEtmgE",
+    authDomain: "my-autumn-camp-blog.firebaseapp.com",
+    databaseURL: "https://my-autumn-camp-blog.firebaseio.com",
+    projectId: "my-autumn-camp-blog",
+    storageBucket: "my-autumn-camp-blog.appspot.com",
+    messagingSenderId: "239225426031"
+    };
+    firebase.initializeApp(config);
+    fb = firebase.database();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scriptsIndex.js"></script>
+    </body>
 </html>
